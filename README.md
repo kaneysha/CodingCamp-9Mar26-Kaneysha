@@ -2,6 +2,7 @@
 Mini Project Batch 09-03-2026
 
 Making a mini web with Kiro.
+
 Main features: 
 1. Greeting
    - Show current time and date
