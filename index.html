@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Greeting Component Container (not boxed) -->
+        <section class="greeting-section">
+            <div id="greeting-container" class="greeting-container">
+                <div id="time-display" class="time-display"></div>
+                <div id="date-display" class="date-display"></div>
+                <div id="greeting-display" class="greeting-display"></div>
+                <div class="name-input-section">
+                    <input type="text" id="name-input" placeholder="Enter your name" class="name-input">
+                    <button id="save-name-btn" class="save-name-btn">Save</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Grid (boxed components) -->
+        <div class="components-grid">
+            <!-- Focus Timer Component Container -->
+            <section class="timer-section">
+                <div id="timer-container" class="timer-container">
+                    <h2>Focus Timer</h2>
+                    <div id="timer-display" class="timer-display">25:00</div>
+                    <div class="timer-controls">
+                        <button id="start-timer-btn" class="timer-btn start-btn">Start</button>
+                        <button id="stop-timer-btn" class="timer-btn stop-btn">Stop</button>
+                        <button id="reset-timer-btn" class="timer-btn reset-btn">Reset</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task Manager Component Container -->
+            <section class="tasks-section">
+                <div id="tasks-container" class="tasks-container">
+                    <h2>Tasks</h2>
+                    <div class="task-input-section">
+                        <input type="text" id="task-input" placeholder="Add a new task" class="task-input">
+                        <button id="add-task-btn" class="add-task-btn">Add Task</button>
+                    </div>
+                    <div id="task-list" class="task-list"></div>
+                </div>
+            </section>
+
+            <!-- Quick Links Component Container -->
+            <section class="links-section">
+                <div id="links-container" class="links-container">
+                    <h2>Quick Links</h2>
+                    <div class="link-input-section">
+                        <input type="text" id="link-url-input" placeholder="Enter URL" class="link-input">
+                        <input type="text" id="link-label-input" placeholder="Enter label" class="link-input">
+                        <button id="add-link-btn" class="add-link-btn">Add Link</button>
+                    </div>
+                    <div id="link-list" class="link-list"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
